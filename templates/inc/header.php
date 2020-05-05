@@ -21,5 +21,5 @@
                 </li>
             </ul>
             </nav>
-            <h3 class="text-muted">JobLister</h3>
+            <h3 class="text-muted"><?php echo SITE_TITLE;?></h3> <!-- SITE_TITLE is defined in config.php -->
         </div>
