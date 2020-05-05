@@ -15,7 +15,7 @@
        }
 
        public function __set($key, $value){
-            $this->$vars[$key] = $value;
+            $this->vars[$key] = $value;
        }
 
        public function __toString(){
@@ -25,7 +25,12 @@
 
            include basename($this->template); // Cut off all path, leaves only file name 
 
-           return ab_get_clean(); // Get current buffer contents and delete current output buffer
+           return ob_get_clean(); // Get current buffer contents and delete current output buffer
 
+       }
+
+       public function hello()
+       {
+           var_dump('Template');
        }
     }
