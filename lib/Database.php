@@ -32,7 +32,7 @@ class Database{
     public function query($query){
         $this->stmt = $this->dbh->prepare($query);
     }
-
+// Bind metode ir drosībai, lai nevarētu hakeri iemst drop table
     public function bind($param, $value, $type = null){
         if(is_null($type)){
             switch(true){
