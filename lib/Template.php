@@ -29,8 +29,5 @@
 
        }
 
-       public function hello()
-       {
-           var_dump('Template');
-       }
+      
     }
